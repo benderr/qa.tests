@@ -1,5 +1,5 @@
 var dict= require('../core/dictService');
-var engmale= require('./engMale');
+var engmale= require('../dict/engMale');
 
 function nameGenerator(lang, sex) {
     dict.init('engMale',engmale);
