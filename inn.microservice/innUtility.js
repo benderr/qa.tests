@@ -8,20 +8,16 @@ function generator(type) {
     if (type == 'legal') {
         //длина 10
         var innLegal = random(10);
-        return innLegal.slice(0,9) +''+ getInn10Sum(innLegal);
-    } else if (type == 'ip') {
+        return innLegal.slice(0, 9) + getInn10Sum(innLegal);
+    } else {
         //длина 12
-        var innIp = random(12);
-        return innIp.slice(0,10) +''+ getInn12Sum1(innIp) +''+ getInn12Sum2(innIp);
+        var innIp = random(10);
+        innIp = innIp + '' + getInn12Sum1(innIp);
+        var generatedInn = innIp + '' + getInn12Sum2(innIp);
+        return generatedInn;
     }
 }
 
-function getLastChar(value, delim) {
-    var lastChar = value % delim;
-    if (lastChar >= 10)
-        return lastChar.toString().slice(-1);
-    return lastChar;
-}
 
 function getInn10Sum(INN) {
     var d;
@@ -75,8 +71,7 @@ var isCorrectInn = function (INN) {
         Result = INN.slice(9, 10) == getInn10Sum(INN);
     }
     else if (INN.length == 12) {//физ лицо и ИП
-
-        Result = INN.slice(10, 11) == getInn12Sum1(INN)  &&
+        Result = INN.slice(10, 11) == getInn12Sum1(INN) &&
             INN.slice(11, 12) == getInn12Sum2(INN);
     }
     return Result;
