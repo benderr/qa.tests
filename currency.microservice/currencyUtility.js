@@ -1,14 +1,10 @@
 var dict = require('../core/dictService');
 var currency = require('../dict/currencies');
 
-function generator(lang, symbol, sokr) {
+function generator(type) {
     dict.init('currency', currency);
-    if (lang)
-        return dict.getElement('currency')['lang'];
-    if (symbol)
-        return dict.getElement('currency')['symbol'];
-    if (sokr)
-        return dict.getElement('currency')['sokr'];
+    if (type && ['lang', 'symbol', 'sokr'].indexOf(type) >= 0)
+        return dict.getElement('currency')[type];
     return dict.getElement('currency')['lang'];
 }
 

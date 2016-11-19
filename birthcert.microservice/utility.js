@@ -14,7 +14,6 @@ function generate() {
         'V',
         'VI',
         'VII',
-        'VIII',
         'IX'
     ]);
 
@@ -26,7 +25,7 @@ function generate() {
 }
 
 function validate(val) {
-    return val && /^([I,II,III,IV,V,VI,VII,VIII,IX]{1,3}-[А-Я]{2} [0-9]{6})$/g.test(val);
+    return val && /^([I,II,III,IV,V,VI,VII,IX]{1,3}-[А-Я]{2} [0-9]{6})$/g.test(val);
 }
 
 module.exports = {

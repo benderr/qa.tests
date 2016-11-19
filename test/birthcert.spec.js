@@ -9,6 +9,7 @@ var utility = require('../birthcert.microservice/utility');
 describe('Валидация Свидетельства о рождении', function () {
     _it('Генерация', function (done) {
         var test = utility.generate();
+        console.log(test);
         expect(utility.validate(test)).to.equal(true);
         done();
         return test;
