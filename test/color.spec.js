@@ -4,14 +4,16 @@ var expect = require('chai').expect;
 var supertest = require('supertest');
 
 var config = require('../color.microservice/config');
-var api = supertest('http://localhost:' + config.port);
+var dict = require('../dict/color');
 var colorUtility = require('../color.microservice/colorUtility');
-
+var _it = require('./muttableIt');
 
 describe('Проверка цвета', function () {
 
-    it('Цвет', function (done) {
-        expect(colorUtility.generate().length>0).to.equal(true);
+    _it('Цвет', function (done) {
+        var val = colorUtility.generate();
+        expect(dict.indexOf(val) >= 0).to.equal(true);
         done();
+        return val;
     });
 });

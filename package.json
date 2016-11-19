@@ -13,7 +13,8 @@
     "bankcard": "node ./card.microservice/app.js",
     "transport": "node ./transport.microservice/app.js",
     "phone": "node ./phone.microservice/app.js",
-    "test": "mocha --reporter mochawesome"
+    "test": "mocha --reporter mochawesome",
+    "testall": "mocha --reporter mochawesome --reporter-options reportDir=test/report"
   },
   "repository": {
     "type": "git",

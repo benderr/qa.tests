@@ -3,14 +3,13 @@ var currency = require('../dict/currencies');
 
 function generator(lang, symbol, sokr) {
     dict.init('currency', currency);
-    if (lang && lang == 'en')
-        return dict.getElement('currency')['en'];
-    if (lang && lang == 'ru')
-        return dict.getElement('currency')['name'];
-    if(symbol)
-        return dict.getElement('currency')['code'];
-    if(sokr)
-        return dict.getElement('currency')['en'];
+    if (lang)
+        return dict.getElement('currency')['lang'];
+    if (symbol)
+        return dict.getElement('currency')['symbol'];
+    if (sokr)
+        return dict.getElement('currency')['sokr'];
+    return dict.getElement('currency')['lang'];
 }
 
 module.exports = {

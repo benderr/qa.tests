@@ -6,11 +6,13 @@ var supertest = require('supertest');
 var config = require('../locality.microservice/config');
 var api = supertest('http://localhost:' + config.port);
 var localityUtility = require('../locality.microservice/localityUtility');
-
+var _it = require('./muttableIt');
 
 describe('Проверка населённого пункт', function () {
-    it('Населённый пункт', function (done) {
-        expect(localityUtility.generate().length>0).to.equal(true);
+    _it('Генерация имени', function (done) {
+        var val = localityUtility.generate();
+        expect(val.length > 0).to.equal(true);
         done();
+        return val;
     });
 });
