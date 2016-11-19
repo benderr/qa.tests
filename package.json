@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "ogrn": "node ./ogrn.microservice/app.js",
+    "snils": "node ./snils.microservice/app.js",
     "test": "mocha"
   },
   "repository": {
