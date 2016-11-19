@@ -12,6 +12,7 @@
     "kbk": "node ./kbk.microservice/app.js",
     "bankcard": "node ./card.microservice/app.js",
     "transport": "node ./transport.microservice/app.js",
+    "phone": "node ./phone.microservice/app.js",
     "test": "mocha"
   },
   "repository": {
