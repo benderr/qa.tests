@@ -12,8 +12,10 @@ var innUtility = require('../inn.microservice/innUtility');
 describe('Валидация инн для юр лица', function () {
 
     it('Валидация инн ИП', function (done) {
-            expect(innUtility.validate(innUtility.generate('ip'))).to.equal(true);
-            done();
+        //'772940256129'
+        var inn = innUtility.generate('ip').toString();
+        expect(innUtility.validate(inn)).to.equal(true);
+        done();
     });
     it('Валидация инн Юрлица', function (done) {
         expect(innUtility.validate(innUtility.generate('legal'))).to.equal(true);
