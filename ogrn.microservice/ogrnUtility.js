@@ -1,3 +1,15 @@
+var random = require('../core/radomizer');
+
+function ogrnGenerator(type) {
+    if (type == 'юр') {
+        //длина 13 
+        random()
+    } else if (type == 'ип') {
+        //длина 15
+        14
+    }
+}
+
 function isCorrectOgrn(ogrn) {
     function isCorrectOgrn13(ogrn) {
         return ogrn.slice(-1) == (ogrn.slice(0, -1) % 11 + '').slice(-1);
@@ -24,3 +36,9 @@ function isCorrectOgrn(ogrn) {
         return isCorrectOgrn13(ogrn);
     }
 }
+
+
+module.exports = {
+    validate: isCorrectOgrn,
+    generate: ogrnGenerator
+};
