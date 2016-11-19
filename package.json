@@ -6,6 +6,7 @@
   "scripts": {
     "ogrn": "node ./ogrn.microservice/app.js",
     "inn": "node ./inn.microservice/app.js",
+    "snils": "node ./snils.microservice/app.js",
     "test": "mocha"
   },
   "repository": {
