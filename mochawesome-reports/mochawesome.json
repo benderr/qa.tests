@@ -6,9 +6,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2016-11-19T19:20:52.575Z",
-    "end": "2016-11-19T19:20:52.590Z",
-    "duration": 15,
+    "start": "2016-11-19T19:31:07.142Z",
+    "end": "2016-11-19T19:31:07.156Z",
+    "duration": 14,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -23,14 +23,14 @@
     "title": "",
     "suites": [
       {
-        "title": "Проверка типа контрагента",
+        "title": "Проверка того, кто выдал паспорт",
         "suites": [],
         "tests": [
           {
-            "title": "Тип контрагента | Результат работы: Налоговая организация",
-            "fullTitle": "Проверка типа контрагента Тип контрагента",
+            "title": "Кто выдал | Результат работы: ОТДЕЛЕНИЕ УФМС РОССИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН В Г. СИБАЙ",
+            "fullTitle": "Проверка того, кто выдал паспорт Кто выдал",
             "timedOut": false,
-            "duration": 2,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -38,23 +38,23 @@
             "pending": false,
             "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "9cca773c-b635-4d0e-b995-6fd7a2a645c8",
-            "parentUUID": "32cd4e58-4cdc-40c4-ac3e-03af1262d0bd",
+            "uuid": "c6947453-83c7-4350-b515-039ebe29863e",
+            "parentUUID": "5d306eed-7c45-4ddd-86a0-edf3ffa24799",
             "skipped": false
           }
         ],
         "pending": [],
         "root": false,
         "_timeout": 2500,
-        "file": "\\test\\contragent.spec.js",
-        "uuid": "32cd4e58-4cdc-40c4-ac3e-03af1262d0bd",
-        "fullFile": "D:\\hackaton\\qa.tests\\test\\contragent.spec.js",
+        "file": "\\test\\whogives.spec.js",
+        "uuid": "5d306eed-7c45-4ddd-86a0-edf3ffa24799",
+        "fullFile": "D:\\hackaton\\qa.tests\\test\\whogives.spec.js",
         "passes": [
           {
-            "title": "Тип контрагента | Результат работы: Налоговая организация",
-            "fullTitle": "Проверка типа контрагента Тип контрагента",
+            "title": "Кто выдал | Результат работы: ОТДЕЛЕНИЕ УФМС РОССИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН В Г. СИБАЙ",
+            "fullTitle": "Проверка того, кто выдал паспорт Кто выдал",
             "timedOut": false,
-            "duration": 2,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -62,8 +62,8 @@
             "pending": false,
             "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "9cca773c-b635-4d0e-b995-6fd7a2a645c8",
-            "parentUUID": "32cd4e58-4cdc-40c4-ac3e-03af1262d0bd",
+            "uuid": "c6947453-83c7-4350-b515-039ebe29863e",
+            "parentUUID": "5d306eed-7c45-4ddd-86a0-edf3ffa24799",
             "skipped": false
           }
         ],
@@ -80,14 +80,14 @@
         "hasFailures": false,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 2
+        "duration": 1
       }
     ],
     "tests": [],
     "pending": [],
     "root": true,
     "_timeout": 2500,
-    "uuid": "b58ba911-3c1a-4353-b15e-bb4dfee0d600",
+    "uuid": "5ee09bdb-7b17-42fa-b247-642c76e2c34b",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -109,10 +109,10 @@
   },
   "allTests": [
     {
-      "title": "Тип контрагента | Результат работы: Налоговая организация",
-      "fullTitle": "Проверка типа контрагента Тип контрагента",
+      "title": "Кто выдал | Результат работы: ОТДЕЛЕНИЕ УФМС РОССИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН В Г. СИБАЙ",
+      "fullTitle": "Проверка того, кто выдал паспорт Кто выдал",
       "timedOut": false,
-      "duration": 2,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -120,18 +120,18 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "5a67d317-ce4c-4f84-b1d5-ed9b989f6e77",
-      "parentUUID": "32cd4e58-4cdc-40c4-ac3e-03af1262d0bd",
+      "uuid": "ce9c885d-358a-4913-b4da-385fa3d3bfa4",
+      "parentUUID": "5d306eed-7c45-4ddd-86a0-edf3ffa24799",
       "skipped": false
     }
   ],
   "allPending": [],
   "allPasses": [
     {
-      "title": "Тип контрагента | Результат работы: Налоговая организация",
-      "fullTitle": "Проверка типа контрагента Тип контрагента",
+      "title": "Кто выдал | Результат работы: ОТДЕЛЕНИЕ УФМС РОССИИ ПО РЕСПУБЛИКЕ БАШКОРТОСТАН В Г. СИБАЙ",
+      "fullTitle": "Проверка того, кто выдал паспорт Кто выдал",
       "timedOut": false,
-      "duration": 2,
+      "duration": 1,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -139,8 +139,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "07cd1d78-7ba2-431b-ac75-a84dad88f758",
-      "parentUUID": "32cd4e58-4cdc-40c4-ac3e-03af1262d0bd",
+      "uuid": "8d5f605e-1e4b-4c1b-8369-7bd4a26b8abb",
+      "parentUUID": "5d306eed-7c45-4ddd-86a0-edf3ffa24799",
       "skipped": false
     }
   ],
