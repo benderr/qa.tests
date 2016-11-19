@@ -5,13 +5,17 @@ var supertest = require('supertest');
 
 var config = require('../transportModel.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var transportModelUtility = require('../transportModel.microservice/transportModelUtility');
+var utility = require('../transportModel.microservice/transportModelUtility');
+var _it = require('./muttableIt');
+var dict = require('../dict/transportModel');
 
 
 describe('Проверка марки транспорта', function () {
 
-    it('Марка транспорта', function (done) {
-        expect(transportModelUtility.generate().length>0).to.equal(true);
+    _it('Генерация', function (done) {
+        var val = utility.generate();
+        expect(dict.indexOf(val) >= 0).to.equal(true);
         done();
+        return val;
     });
 });

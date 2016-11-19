@@ -4,14 +4,16 @@ var expect = require('chai').expect;
 var supertest = require('supertest');
 
 var config = require('../city.microservice/config');
-var api = supertest('http://localhost:' + config.port);
-var cityUtility = require('../city.microservice/nameUtility');
+var cityUtility = require('../city.microservice/cityUtility');
+var dict = require('../dict/city');
+var _it = require('./muttableIt');
 
+describe('Проверка города', function () {
 
-describe('Проверка региона', function () {
-
-    it('регион', function (done) {
-        expect(cityUtility.generate().length>0).to.equal(true);
+    _it('Название города', function (done) {
+        var cityName = cityUtility.generate();
+        expect(dict.indexOf(cityName) >= 0).to.equal(true);
         done();
+        return cityName;
     });
 });

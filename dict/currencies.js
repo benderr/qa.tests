@@ -1,58 +1,57 @@
-module.exports= [{en:'A98',	name: 'Золото в гр.', code: 'A98'},
-    {en:'AED',	name: 'Дирхам (ОАЭ)', code: '784'},
-    {en:'AMD',	name: 'Армянский драм', code: '051'},
-    {en:'ARS',	name: 'Аргентинское песо', code: '032'},
-    {en:'AU',	name: 'Золото в граммах', code: 'A98'},
-    {en:'AUD',	name: 'Австралийский доллар', code: '036'},
-    {en:'BAM',	name: 'Конвертируемая марка', code: '977'},
-    {en:'BGN',	name: 'Болгарский лев', code: '975'},
-    {en:'BRL',	name: 'Бразильский реал', code: '986'},
-    {en:'BYN',	name: 'Belarusian Ruble', code: '933'},
-    {en:'BYR',	name: 'Белорусский рубль', code: '974'},
-    {en:'CAD',	name: 'Канадский доллар', code: '124'},
-    {en:'CHF',	name: 'Швейцарский франк', code: '756'},
-    {en:'CLP',	name: 'Чилийское песо', code: '152'},
-    {en:'CNY',	name: 'Китайский юань', code: '156'},
-    {en:'CZK',	name: 'Чешская крона', code: '203'},
-    {en:'DEM',	name: 'Немецкая марка', code: '276'},
-    {en:'DKK',	name: 'Датская крона', code: '208'},
-    {en:'DOP',	name: 'Доминиканское песо', code: '234'},
-    {en:'EGP',	name: 'Египетский фунт', code: '818'},
-    {en:'EUR',	name: 'Евро', code: '978'},
-    {en:'FJD',	name: 'Доллар Фиджи', code: '242'},
-    {en:'GBP',	name: 'Фунт стерлингов', code: '826'},
-    {en:'GEL',	name: 'Лари', code: '981'},
-    {en:'HKD',	name: 'Гонконгский доллар', code: '344'},
-    {en:'HRK',	name: 'Куна', code: '191'},
-    {en:'HUF',	name: 'Форинт', code: '348'},
-    {en:'IDR',	name: 'Рупия', code: '360'},
-    {en:'ILS',	name: 'Шекель', code: '376'},
-    {en:'INR',	name: 'Индийская рупия', code: '356'},
-    {en:'JPY',	name: 'Иена', code: '392'},
-    {en:'KES',	name: 'Кенийский шиллинг', code: '404'},
-    {en:'KRW',	name: 'Вона', code: '410'},
-    {en:'KZT',	name: 'Тенге (казахский)', code: '398'},
-    {en:'LKR',	name: 'Шри - Ланкийская', code: '144'},
-    {en:'LTL',	name: 'Литовский лит', code: '440'},
-    {en:'MAD',	name: 'Марокканский дирхам', code: '504'},
-    {en:'MDL',	name: 'Молдавский лей', code: '498'},
-    {en:'MYR',	name: 'Малайзийский ринггит', code: '458'},
-    {en:'NOK',	name: 'Норвежская крона', code: '578'},
-    {en:'NPR',	name: 'Непальская рупия', code: '524'},
-    {en:'NZD',	name: 'Новозеландский доллар', code: '554'},
-    {en:'PLN',	name: 'Польский злотый', code: '985'},
-    {en:'PLN',	name: 'Польский Злотый', code: '944'},
-    {en:'QAR',	name: 'Катарский риал', code: '634'},
-    {en:'RON',	name: 'Новый румынский лей', code: '946'},
-    {en:'RSD',	name: 'Сербский динар', code: '941'},
-    {en:'RUB',	name: 'Российский рубль', code: '643'},
-    {en:'SEK',	name: 'Шведская крона', code: '752'},
-    {en:'SGD',	name: 'Сингапурский доллар', code: '702'},
-    {en:'THB',	name: 'Бат', code: '764'},
-    {en:'TND',	name: 'Тунисский динар', code: '788'},
-    {en:'TRY',	name: 'Турецкая лира Турция', code: '949'},
-    {en:'TWD',	name: 'Новый Тайваньский доллар', code: '901'},
-    {en:'UAH',	name: 'Украинская гривна', code: '980'},
-    {en:'USD',	name: 'Доллар США', code: '840'},
-    {en:'VND',	name: 'Донг', code: '704'},
-    {en:'ZAR',	name: 'Рэнд', code: '710'}];
+module.exports = [
+    {
+        lang: 'Доллар США',
+        sokr: 'USD',
+        symbol: '$'
+    },
+    {
+        lang: 'Канадский доллар',
+        sokr: 'CAD',
+        symbol: '$'
+    },
+    {
+        lang: 'Российский рубль',
+        sokr: 'RUB',
+        symbol: '₽'
+    },
+    {
+        lang: 'Белорусский рубль',
+        sokr: 'BYR',
+        symbol: 'Br'
+    },
+    {
+        lang: 'Чилийское песо',
+        sokr: 'CLP',
+        symbol: '₱'
+    },
+    {
+        lang: 'Иена',
+        sokr: 'JPY',
+        symbol: '¥'
+    },
+    {
+        lang: 'Швейцарский франк',
+        sokr: 'CHF',
+        symbol: '₣‎'
+    },
+    {
+        lang: 'Китайский юань',
+        sokr: 'CNY',
+        symbol: '元'
+    },
+    {
+        lang: 'Евро',
+        sokr: 'EUR',
+        symbol: '€'
+    },
+    {
+        lang: 'Украинская гривна',
+        sokr: 'UAH',
+        symbol: '₴'
+    },
+    {
+        lang: 'Шведская крона',
+        sokr: 'SEK',
+        symbol: 'Ш'
+    }
+];

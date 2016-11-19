@@ -5,11 +5,11 @@
 var random = require('../core/radomizer');
 
 function generator() {
-    return random(2) + ':' + random(2)+':'+random(6)+':'+random(3);
+    return random(2) + ':' + random(2) + ':' + random(6) + ':' + random(3);
 }
 
 function isCorrect(value) {
-    var	REGEXP=/^\d{2}:\d{2}:\d{6}:\d{3}$/g;
+    var REGEXP = /^\d{2}:\d{2}:(\d{6}|\d{7}):(\d{2}|\d{3})$/g;
     return REGEXP.test(value);
 }
 

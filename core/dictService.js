@@ -1,7 +1,3 @@
-/**
- * Created by RobertSabiryanov on 19.11.16.
- */
-
 var arrays={};
 
 function getRandomIndex(dictName) {

@@ -3,15 +3,17 @@
 var expect = require('chai').expect;
 var supertest = require('supertest');
 
-var config = require('../martial.microservice/config');
-var api = supertest('http://localhost:' + config.port);
-var martialUtility = require('../martial.microservice/martialUtility');
+var utility = require('../property.microservice/propertyUtility');
+var _it = require('./muttableIt');
+var dict = require('../dict/property');
 
 
 describe('Проверка права собственности', function () {
 
-    it('Право собственности', function (done) {
-        expect(martialUtility.generate().length>0).to.equal(true);
+    _it('Генерация', function (done) {
+        var val = utility.generate();
+        expect(dict.indexOf(val) >= 0).to.equal(true);
         done();
+        return val;
     });
 });

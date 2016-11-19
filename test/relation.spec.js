@@ -5,13 +5,17 @@ var supertest = require('supertest');
 
 var config = require('../relation.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var relationUtility = require('../relation.microservice/relationUtility');
+var utility = require('../relation.microservice/relationUtility');
+var _it = require('./muttableIt');
+var dict = require('../dict/relation');
 
 
 describe('Проверка родственных связей', function () {
 
-    it('Родственные связей', function (done) {
-        expect(relationUtility.generate().length>0).to.equal(true);
+    _it('Генерация', function (done) {
+        var val = utility.generate();
+        expect(dict.indexOf(val) >= 0).to.equal(true);
         done();
+        return val;
     });
 });

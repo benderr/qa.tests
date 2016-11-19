@@ -38,14 +38,8 @@ function isValidCountryCode(phone) {
     return state;
 }
 
-function validate(phone) {
-    //проверка только на минимальную длину {страна(длина 1)}{код оператора/города(длина1)}{номер длина 7}
-    //и наличия валидного кода страны
-    phone = cleanPhone(phone);
-    return phone && phone.length >= 9 && isValidCountryCode(phone);
-}
 
 module.exports = {
-    validate: validate,
-    generate: generate
+    generate: generate,
+    isValidCountryCode: isValidCountryCode
 };

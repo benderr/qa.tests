@@ -7,16 +7,28 @@ var supertest = require('supertest');
 var config = require('../inn.microservice/config');
 var api = supertest('http://localhost:' + config.port);
 var utility = require('../kadastr.microservice/kadastrUtility');
-
+var _it = require('./muttableIt');
 
 describe('Валидация кадастрового номера', function () {
 
-    it('Валидация кадастрового номера', function (done) {
-            expect(utility.validate(utility.generate())).to.equal(true);
-            done();
-    });
-    it('Валидация пустого', function (done) {
-        expect(utility.validate('')).to.equal(false);
+    _it('генерация', function (done) {
+        var val = utility.generate();
+        expect(utility.validate(val)).to.equal(true);
         done();
+        return val;
+    });
+
+    _it('проверка валидатора', function (done) {
+        var val = '57:02:0036003:54';
+        expect(utility.validate(val)).to.equal(true);
+        done();
+        return val;
+    });
+
+    _it('проверка валидатора не верный формат', function (done) {
+        var val = '57:012:10036003:54';
+        expect(utility.validate(val)).to.equal(false);
+        done();
+        return val;
     });
 });

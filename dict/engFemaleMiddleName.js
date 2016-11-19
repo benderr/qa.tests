@@ -1,0 +1,1 @@
+module.exports=["Danilovna","Dinarovna","Sergeevna","Robertovna","Andreevna","Petrovna","Olegovna","Vladimirovna","Aleksandrovna","Denisovna"];
