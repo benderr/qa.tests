@@ -10,17 +10,10 @@ var cardUtility = require('../card.microservice/cardUtility');
 
 
 describe('Валидация номера карты', function () {
-    it('Валидация сервиса для юр.лиц', function (done) {
-        api.get('/getdata')
-            .end(function (err, res) {
-                expect(res.text).to.have.length(16);
-                expect(cardUtility.validate(res.text)).to.equal(true);
-                done();
-            });
-    });
-
     it('Тест генератора', function (done) {
-        expect(cardUtility.generate()).to.have.length(16);
+        var test = cardUtility.generate();
+        expect(test).to.have.length(16);
+        expect(cardUtility.validate(test)).to.equal(true);
         done();
     });
 

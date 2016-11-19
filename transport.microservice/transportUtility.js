@@ -32,7 +32,7 @@ function generate(type) {
         case 'auto':
             return `${getRandomWord()}${getRandomNumber(3)}${getRandomWord()}${getRandomWord()}${getRandomRegion()}`;
         case 'taxi':
-            return `${getRandomNumber(3)}${getRandomWord()}${getRandomWord()}${getRandomRegion()}`;
+            return `${getRandomWord()}${getRandomWord()}${getRandomNumber(3)}${getRandomRegion()}`;
         case 'trailer':
             return `${getRandomWord()}${getRandomWord()}${getRandomNumber(4)}${getRandomRegion()}`;
         case 'moto':

@@ -9,14 +9,7 @@ var utility = require('../kbk.microservice/utility');
 
 
 describe('Валидация КБК', function () {
-    it('Валидация сервиса для КБК', function (done) {
-        api.get('/getdata')
-            .end(function (err, res) {
-                expect(utility.validate(res.text)).to.equal(true);
-                done();
-            });
-    });
-
+   
     it('Валидация КБК', function (done) {
         expect(utility.validate('02011402015010000410')).to.equal(true);
         done();

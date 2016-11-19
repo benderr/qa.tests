@@ -5,7 +5,7 @@ var supertest = require('supertest');
 
 var config = require('../education.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var educationUtility = require('../education.microservice/commentsUtility');
+var educationUtility = require('../education.microservice/educationUtility');
 
 
 describe('Проверка региона', function () {

@@ -10,16 +10,7 @@ var snilsUtility = require('../snils.microservice/snilsUtility');
 
 describe('Валидация снилс', function () {
 
-    it('Валидация сервиса', function (done) {
-        api.get('/getdata')
-            .end(function (err, res) {
-                expect(res.text).to.have.length(11);
-                expect(snilsUtility.validate(res.text)).to.equal(true);
-                done();
-            });
-    });
-
-    it('Генарация снилс', function (done) {
+    it('Генерация снилс', function (done) {
         expect(snilsUtility.generate(false)).to.have.length(11);
         done();
     });

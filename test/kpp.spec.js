@@ -10,11 +10,10 @@ var kppUtility = require('../kpp.microservice/kppUtility');
 
 describe('Валидация кпп', function () {
     it('Валидация сервиса для кпп', function (done) {
-        api.get('/getdata')
-            .end(function (err, res) {
-                expect(kppUtility.validate(res.text)).to.equal(true);
-                done();
-            });
+        var test = kppUtility.generate();
+        expect(test).to.be.a('string');
+        expect(kppUtility.validate(test)).to.equal(true);
+        done();
     });
 
     it('Валидация кпп', function (done) {

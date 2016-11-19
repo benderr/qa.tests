@@ -10,12 +10,28 @@ var api = supertest('http://localhost:' + config.port);
 
 
 describe('Валидация номера ТС', function () {
-    it('Валидация сервиса для получения номера', function (done) {
-        api.get('/getdata/auto')
-            .end(function (err, res) {
-                expect(transportUtility.validate(res.text, 'auto')).to.equal(true);
-                done();
-            });
+    it('Валидация сервиса для получения номера - гражд. авто', function (done) {
+        var test = transportUtility.generate('auto');
+        expect(transportUtility.validate(test, 'auto')).to.equal(true);
+        done();
+    });
+
+    it('Валидация сервиса для получения номера - такси', function (done) {
+        var test = transportUtility.generate('taxi');
+        expect(transportUtility.validate(test, 'taxi')).to.equal(true);
+        done();
+    });
+
+    it('Валидация сервиса для получения номера - транзит', function (done) {
+        var test = transportUtility.generate('tranzit');
+        expect(transportUtility.validate(test, 'tranzit')).to.equal(true);
+        done();
+    });
+
+    it('Валидация сервиса для получения номера - МВД', function (done) {
+        var test = transportUtility.generate('mvd');
+        expect(transportUtility.validate(test, 'mvd')).to.equal(true);
+        done();
     });
 
     it('Тест гражданские авто', function (done) {

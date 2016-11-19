@@ -11,21 +11,17 @@ var api = supertest('http://localhost:' + config.port);
 
 describe('Валидация огрн', function () {
     it('Валидация сервиса для юр.лиц', function (done) {
-        api.get('/getdata/legal')
-            .end(function (err, res) {
-                expect(res.text).to.have.length(13);
-                expect(ogrnUtility.validate(res.text)).to.equal(true);
-                done();
-            });
+        var test = ogrnUtility.generate('legal');
+        expect(test).to.have.length(13);
+        expect(ogrnUtility.validate(test)).to.equal(true);
+        done();
     });
 
     it('Валидация сервиса для ип', function (done) {
-        api.get('/getdata/ip')
-            .end(function (err, res) {
-                expect(res.text).to.have.length(15);
-                expect(ogrnUtility.validate(res.text)).to.equal(true);
-                done();
-            });
+        var test = ogrnUtility.generate('ip');
+        expect(test).to.have.length(15);
+        expect(ogrnUtility.validate(test)).to.equal(true);
+        done();
     });
 
     it('Валидация валидного ип', function (done) {
@@ -48,13 +44,4 @@ describe('Валидация огрн', function () {
         done();
     });
 
-    it('Валидация длины юр огрн', function (done) {
-        expect(ogrnUtility.generate('legal')).to.have.length(13);
-        done();
-    });
-
-    it('Валидация длины ип огрн', function (done) {
-        expect(ogrnUtility.generate('ip')).to.have.length(15);
-        done();
-    });
 });

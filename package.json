@@ -13,7 +13,7 @@
     "bankcard": "node ./card.microservice/app.js",
     "transport": "node ./transport.microservice/app.js",
     "phone": "node ./phone.microservice/app.js",
-    "test": "mocha"
+    "test": "mocha --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "chai": "~3.4.1",
     "mocha": "~2.3.3",
+    "mochawesome": "^1.5.3",
     "superagent": "~1.4.0",
     "supertest": "~1.1.0"
   },

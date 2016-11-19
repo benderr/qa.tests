@@ -10,11 +10,10 @@ var bikUtility = require('../bik.microservice/bikUtility');
 
 describe('Валидация кпп', function () {
     it('Валидация сервиса для бика', function (done) {
-        api.get('/getdata')
-            .end(function (err, res) {
-                expect(bikUtility.validate(res.text)).to.equal(true);
-                done();
-            });
+        var test = bikUtility.generate();
+        expect(test).to.be.a('string');
+        expect(bikUtility.validate(test)).to.equal(true);
+        done();
     });
 
     it('Валидация бика', function (done) {
