@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./ogrn.microservice/app.js"
+    "ogrn": "node ./ogrn.microservice/app.js"
   },
   "repository": {
     "type": "git",
