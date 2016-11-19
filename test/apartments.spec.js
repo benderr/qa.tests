@@ -5,13 +5,15 @@ var supertest = require('supertest');
 
 var config = require('../apartments.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var apartmentsUtility = require('../apartments.microservice/utility');
-
+var utility = require('../apartments.microservice/utility');
+var _it = require('./muttableIt')
 
 describe('Проверка состояния квартиры', function () {
 
-    it('Состояние квартиры', function (done) {
-        expect(utility.generate().length>0).to.equal(true);
+    _it('Состояние квартиры', function (done) {
+    	var test = utility.generate()
+        expect(test.length>0).to.equal(true);
         done();
+        return test;
     });
 });
