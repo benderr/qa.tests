@@ -4,14 +4,21 @@ function ogrnGenerator(type) {
     if (type == 'legal') {
         //длина 13 
         var ogrnLegal = random(12);
-        var lastCharLegal = ogrnLegal % 11;
+        var lastCharLegal = getLastChar(ogrnLegal, 11);
         return ogrnLegal + lastCharLegal;
     } else if (type == 'ip') {
         //длина 15
         var ogrnIp = random(14);
-        var lastCharIp = ogrnIp % 13;
+        var lastCharIp = getLastChar(ogrnIp, 13);
         return ogrnIp + lastCharIp;
     }
+}
+
+function getLastChar(ogrn, delim) {
+    var lastChar = ogrn % delim;
+    if (lastChar >= 10)
+        return lastChar.toString().slice(-1);
+    return lastChar;
 }
 
 function isCorrectOgrn(ogrn) {
