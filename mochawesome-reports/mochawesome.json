@@ -6,8 +6,8 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2016-11-19T17:50:32.227Z",
-    "end": "2016-11-19T17:50:32.243Z",
+    "start": "2016-11-19T18:20:15.851Z",
+    "end": "2016-11-19T18:20:15.867Z",
     "duration": 16,
     "testsRegistered": 1,
     "passPercent": 100,
@@ -23,12 +23,12 @@
     "title": "",
     "suites": [
       {
-        "title": "Проверка языка",
+        "title": "Проверка фамилии",
         "suites": [],
         "tests": [
           {
-            "title": "Языка | Результат работы: Русский",
-            "fullTitle": "Проверка языка Языка",
+            "title": "Фамилия",
+            "fullTitle": "Проверка фамилии Фамилия",
             "timedOut": false,
             "duration": 2,
             "state": "passed",
@@ -36,23 +36,23 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+            "code": "expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();",
             "isRoot": false,
-            "uuid": "3816eb69-d42d-4567-a338-25126a383583",
-            "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
+            "uuid": "3e37e62d-e0c0-48fe-9d89-01fac2c43d18",
+            "parentUUID": "49347fba-f8d7-4f14-9f28-ebeb88d52fe7",
             "skipped": false
           }
         ],
         "pending": [],
         "root": false,
         "_timeout": 2500,
-        "file": "\\test\\language.spec.js",
-        "uuid": "1a79ea57-5c89-4dea-b82d-8458878f4895",
-        "fullFile": "D:\\hackaton\\qa.tests\\test\\language.spec.js",
+        "file": "\\test\\surname.spec.js",
+        "uuid": "49347fba-f8d7-4f14-9f28-ebeb88d52fe7",
+        "fullFile": "D:\\hackaton\\qa.tests\\test\\surname.spec.js",
         "passes": [
           {
-            "title": "Языка | Результат работы: Русский",
-            "fullTitle": "Проверка языка Языка",
+            "title": "Фамилия",
+            "fullTitle": "Проверка фамилии Фамилия",
             "timedOut": false,
             "duration": 2,
             "state": "passed",
@@ -60,10 +60,10 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+            "code": "expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();",
             "isRoot": false,
-            "uuid": "3816eb69-d42d-4567-a338-25126a383583",
-            "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
+            "uuid": "3e37e62d-e0c0-48fe-9d89-01fac2c43d18",
+            "parentUUID": "49347fba-f8d7-4f14-9f28-ebeb88d52fe7",
             "skipped": false
           }
         ],
@@ -87,7 +87,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2500,
-    "uuid": "4a750c9a-0938-4753-b07f-2908fb3933f4",
+    "uuid": "d41663b5-4425-4009-9ae5-8c0eff8cb489",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -109,8 +109,8 @@
   },
   "allTests": [
     {
-      "title": "Языка | Результат работы: Русский",
-      "fullTitle": "Проверка языка Языка",
+      "title": "Фамилия",
+      "fullTitle": "Проверка фамилии Фамилия",
       "timedOut": false,
       "duration": 2,
       "state": "passed",
@@ -118,18 +118,18 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+      "code": "expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();",
       "isRoot": false,
-      "uuid": "32ed298c-2660-41d3-899c-9590446b853c",
-      "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
+      "uuid": "9e0d1c0c-8124-4243-8702-0c6ac4b8745c",
+      "parentUUID": "49347fba-f8d7-4f14-9f28-ebeb88d52fe7",
       "skipped": false
     }
   ],
   "allPending": [],
   "allPasses": [
     {
-      "title": "Языка | Результат работы: Русский",
-      "fullTitle": "Проверка языка Языка",
+      "title": "Фамилия",
+      "fullTitle": "Проверка фамилии Фамилия",
       "timedOut": false,
       "duration": 2,
       "state": "passed",
@@ -137,10 +137,10 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+      "code": "expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'male'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'eng'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>expect(surnameUtility.generate(<span class=\"hljs-string\">'rus'</span>, <span class=\"hljs-string\">'female'</span>).length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();",
       "isRoot": false,
-      "uuid": "8a923e5b-7433-4a84-a95d-cac4098cfce6",
-      "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
+      "uuid": "eb4c985a-adab-44e6-b36d-99750b37e85a",
+      "parentUUID": "49347fba-f8d7-4f14-9f28-ebeb88d52fe7",
       "skipped": false
     }
   ],

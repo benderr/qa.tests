@@ -1,12 +1,12 @@
 var dict= require('../core/dictService');
-var engmale= require('../dict/engMale');
-var engfemale= require('../dict/engFemaleName');
-var rusmale= require('../dict/rusMaleName');
-var rusfemale= require('../dict/rusFemaleName');
+var engmale= require('../dict/engSurname');
+var engfemale= require('../dict/engSurname');
+var rusmale= require('../dict/rusMaleSurname');
+var rusfemale= require('../dict/rusFemaleSurname');
 
 function nameGenerator(lang, sex) {
     dict.init('engMale',engmale);
-    dict.init('engFemale',engfemalename);
+    dict.init('engFemale',engfemale);
     dict.init('rusMale',rusmale);
     dict.init('rusFemale',rusfemale);
 

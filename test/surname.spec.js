@@ -7,11 +7,11 @@ var supertest = require('supertest');
 var config = require('../surname.microservice/config');
 var api = supertest('http://localhost:' + config.port);
 var surnameUtility = require('../surname.microservice/surnameUtility');
+var _it = require('./muttableIt')
 
+describe('Проверка фамилии', function () {
 
-describe('Проверка имени', function () {
-
-    it('Имя', function (done) {
+    _it('Фамилия', function (done) {
         expect(surnameUtility.generate('eng', 'male').length>0).to.equal(true);
         expect(surnameUtility.generate('rus', 'male').length>0).to.equal(true);
         expect(surnameUtility.generate('eng', 'female').length>0).to.equal(true);
