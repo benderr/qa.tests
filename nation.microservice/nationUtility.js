@@ -1,5 +1,5 @@
 var dict= require('../core/dictService');
-var nations= require('./nation');
+var nations= require('../dict/nation');
 
 function nationsGenerator() {
     dict.init('nation',nations)
