@@ -11,8 +11,8 @@ var _it = require('./muttableIt')
 describe('Проверка того, кто выдал паспорт', function () {
 
     _it('Кто выдал', function (done) {
-    	var test = utility.generate()
-        expect(test.length>0).to.equal(true);
+        var test = utility.generate();
+        expect(test.length > 0).to.equal(true);
         done();
         return test;
     });

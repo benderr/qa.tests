@@ -11,11 +11,31 @@ var _it = require('./muttableIt')
 
 describe('Проверка фамилии', function () {
 
-    _it('Фамилия', function (done) {
-        expect(surnameUtility.generate('eng', 'male').length>0).to.equal(true);
-        expect(surnameUtility.generate('rus', 'male').length>0).to.equal(true);
-        expect(surnameUtility.generate('eng', 'female').length>0).to.equal(true);
-        expect(surnameUtility.generate('rus', 'female').length>0).to.equal(true);
+    _it('Фамилия eng male', function (done) {
+        var val = surnameUtility.generate('eng', 'male');
+        expect(/^[A-Za-z]*$/.test(val)).to.equal(true);
         done();
+        return val;
+    });
+
+    _it('Фамилия rus male', function (done) {
+        var val = surnameUtility.generate('rus', 'male');
+        expect(/^[А-Яа-я]*$/.test(val)).to.equal(true);
+        done();
+        return val;
+    });
+
+    _it('Фамилия eng female', function (done) {
+        var val = surnameUtility.generate('eng', 'female');
+        expect(/^[A-Za-z]*$/.test(val)).to.equal(true);
+        done();
+        return val;
+    });
+
+    _it('Фамилия rus female', function (done) {
+        var val = surnameUtility.generate('rus', 'female');
+        expect(/^[А-Яа-я]*$/.test(val)).to.equal(true);
+        done();
+        return val;
     });
 });
