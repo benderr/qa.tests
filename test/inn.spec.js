@@ -19,7 +19,7 @@ describe('Валидация инн для юр лица', function () {
         expect(innUtility.validate('7710556540')).to.equal(true);
         done();
     });
-    it('Валидация резидинта', function (done) {
+    it('Валидация резидент', function (done) {
         expect(innUtility.validate('12345')).to.equal(true);
         done();
     });
