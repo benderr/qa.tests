@@ -3,15 +3,15 @@
 var expect = require('chai').expect;
 var supertest = require('supertest');
 
-var config = require('../streets..microservice/config');
+var config = require('../streets.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var streets.Utility = require('../streets..microservice/streets.Utility');
+var streetsUtility = require('../streets.microservice/streetsUtility');
 
 
-describe('Проверка семейного положения', function () {
+describe('Проверка типа улицы', function () {
 
-    it('Семейное положение', function (done) {
-        expect(streets.Utility.generate().length>0).to.equal(true);
+    it('Тип улицы', function (done) {
+        expect(streetsUtility.generate().length>0).to.equal(true);
         done();
     });
 });
