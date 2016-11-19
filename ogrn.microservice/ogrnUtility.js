@@ -1,12 +1,16 @@
 var random = require('../core/radomizer');
 
 function ogrnGenerator(type) {
-    if (type == 'юр') {
+    if (type == 'legal') {
         //длина 13 
-        random()
-    } else if (type == 'ип') {
+        var ogrnLegal = random(12);
+        var lastCharLegal = ogrnLegal % 11;
+        return ogrnLegal + lastCharLegal;
+    } else if (type == 'ip') {
         //длина 15
-        14
+        var ogrnIp = random(14);
+        var lastCharIp = ogrnIp % 13;
+        return ogrnIp + lastCharIp;
     }
 }
 
