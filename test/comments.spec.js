@@ -9,10 +9,10 @@ var api = supertest('http://localhost:' + config.port);
 var nameUtility = require('../name.microservice/nameUtility');
 
 
-describe('Проверка комментария', function () {
+describe('Проверка имени', function () {
 
-    it('Комментарий', function (done) {
-        expect(nameUtility.generate().length>0).to.equal(true);
+    it('Имя', function (done) {
+        expect(nameUtility.generate('eng', 'male').length>0).to.equal(true);
         done();
     });
 });
