@@ -6,9 +6,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2016-11-19T17:39:07.110Z",
-    "end": "2016-11-19T17:39:07.122Z",
-    "duration": 12,
+    "start": "2016-11-19T17:50:32.227Z",
+    "end": "2016-11-19T17:50:32.243Z",
+    "duration": 16,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -23,14 +23,14 @@
     "title": "",
     "suites": [
       {
-        "title": "Проверка состояния квартиры",
+        "title": "Проверка языка",
         "suites": [],
         "tests": [
           {
-            "title": "Состояние квартиры | Результат работы: Евростандарт",
-            "fullTitle": "Проверка состояния квартиры Состояние квартиры",
+            "title": "Языка | Результат работы: Русский",
+            "fullTitle": "Проверка языка Языка",
             "timedOut": false,
-            "duration": 1,
+            "duration": 2,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -38,23 +38,23 @@
             "pending": false,
             "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "7f9970a7-d34a-48ac-9fe2-1cf3f051070f",
-            "parentUUID": "03cb01ab-ea41-46d8-a6a2-a91ad9ba1cfe",
+            "uuid": "3816eb69-d42d-4567-a338-25126a383583",
+            "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
             "skipped": false
           }
         ],
         "pending": [],
         "root": false,
         "_timeout": 2500,
-        "file": "\\test\\apartments.spec.js",
-        "uuid": "03cb01ab-ea41-46d8-a6a2-a91ad9ba1cfe",
-        "fullFile": "D:\\hackaton\\qa.tests\\test\\apartments.spec.js",
+        "file": "\\test\\language.spec.js",
+        "uuid": "1a79ea57-5c89-4dea-b82d-8458878f4895",
+        "fullFile": "D:\\hackaton\\qa.tests\\test\\language.spec.js",
         "passes": [
           {
-            "title": "Состояние квартиры | Результат работы: Евростандарт",
-            "fullTitle": "Проверка состояния квартиры Состояние квартиры",
+            "title": "Языка | Результат работы: Русский",
+            "fullTitle": "Проверка языка Языка",
             "timedOut": false,
-            "duration": 1,
+            "duration": 2,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -62,8 +62,8 @@
             "pending": false,
             "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "7f9970a7-d34a-48ac-9fe2-1cf3f051070f",
-            "parentUUID": "03cb01ab-ea41-46d8-a6a2-a91ad9ba1cfe",
+            "uuid": "3816eb69-d42d-4567-a338-25126a383583",
+            "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
             "skipped": false
           }
         ],
@@ -80,14 +80,14 @@
         "hasFailures": false,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 1
+        "duration": 2
       }
     ],
     "tests": [],
     "pending": [],
     "root": true,
     "_timeout": 2500,
-    "uuid": "9e15751b-6363-4933-b59a-b40874d6764c",
+    "uuid": "4a750c9a-0938-4753-b07f-2908fb3933f4",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -109,10 +109,10 @@
   },
   "allTests": [
     {
-      "title": "Состояние квартиры | Результат работы: Евростандарт",
-      "fullTitle": "Проверка состояния квартиры Состояние квартиры",
+      "title": "Языка | Результат работы: Русский",
+      "fullTitle": "Проверка языка Языка",
       "timedOut": false,
-      "duration": 1,
+      "duration": 2,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -120,18 +120,18 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "53114ff7-93d5-468c-b8d4-a8e55047cfb6",
-      "parentUUID": "03cb01ab-ea41-46d8-a6a2-a91ad9ba1cfe",
+      "uuid": "32ed298c-2660-41d3-899c-9590446b853c",
+      "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
       "skipped": false
     }
   ],
   "allPending": [],
   "allPasses": [
     {
-      "title": "Состояние квартиры | Результат работы: Евростандарт",
-      "fullTitle": "Проверка состояния квартиры Состояние квартиры",
+      "title": "Языка | Результат работы: Русский",
+      "fullTitle": "Проверка языка Языка",
       "timedOut": false,
-      "duration": 1,
+      "duration": 2,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -139,8 +139,8 @@
       "pending": false,
       "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate()<br>    expect(test.length&gt;<span class=\"hljs-number\">0</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "a7ffef2d-59c5-4ee4-a9d8-108bb52398fc",
-      "parentUUID": "03cb01ab-ea41-46d8-a6a2-a91ad9ba1cfe",
+      "uuid": "8a923e5b-7433-4a84-a95d-cac4098cfce6",
+      "parentUUID": "1a79ea57-5c89-4dea-b82d-8458878f4895",
       "skipped": false
     }
   ],
