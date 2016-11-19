@@ -2,9 +2,9 @@
 
 var express = require('express');
 var router = express.Router();
-var apartmentsUtility = require('./apartmentsUtility');
+var utility = require('./utility');
 
 router.get("/getdata", function (req, res) {
-    res.send(apartmentsUtility.generate().toString());
+    res.send(utility.generate().toString());
 });
 module.exports = router;
