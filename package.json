@@ -1,0 +1,33 @@
+{
+  "name": "qa.tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./ogrn.microservice/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benderr/qa.tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benderr/qa.tests/issues"
+  },
+  "homepage": "https://github.com/benderr/qa.tests#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "~1.14.1",
+    "cookie-parser": "~1.4.0",
+    "debug": "~2.2.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "connect-flash": "~0.1.1",
+    "express-session": "~1.12.1"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}
