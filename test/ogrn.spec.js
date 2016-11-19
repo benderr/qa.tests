@@ -47,4 +47,14 @@ describe('Валидация огрн', function () {
         expect(ogrnUtility.validate('1027700132197')).to.equal(false);
         done();
     });
+
+    it('Валидация длины юр огрн', function (done) {
+        expect(ogrnUtility.generate('legal')).to.have.length(13);
+        done();
+    });
+
+    it('Валидация длины ип огрн', function (done) {
+        expect(ogrnUtility.generate('ip')).to.have.length(15);
+        done();
+    });
 });
