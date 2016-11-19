@@ -5,7 +5,6 @@ function getItem(optionsString) {
         throw 'не валидный список параметров';
 
     var options = optionsString.split(',');
-    console.log(options);
     dict.init('customoptions', options);
     return dict.getElement('customoptions');
 }
