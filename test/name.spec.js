@@ -12,7 +12,7 @@ var nameUtility = require('../name.microservice/nameUtility');
 describe('Проверка имени', function () {
 
     it('Имя', function (done) {
-            expect(nameUtility.('tbgtbhtdsad')).to.equal(true);
-            done();
+        expect(nameUtility.generate('eng', 'male').length>0).to.equal(true);
+        done();
     });
 });

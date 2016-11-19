@@ -1,34 +1,29 @@
-var random = require('../core/radomizer');
-
+var dict= require('../core/dictService');
+var engmale= require('./engMale');
 
 function nameGenerator(lang, sex) {
-    var engMale = ["Michael","Nathen","Orson"];
-    var engFemale = ["Lucy", "Tifany", "Katty"];
-    var rusMale = ["Петя", "Вася", "Ваня"];
-    var resFemale = ["Даша", "Маша", "Катя"];
-
-    function getRandomName(typeName) {
-    	var i = Math.floor(Math.random() * typeName.length);
-    	return typeName[i];
-	}
+    dict.init('engMale',engmale);
+    dict.init('engFemale',["Lucy", "Tifany", "Katty"]);
+    dict.init('rusMale',["Петя", "Вася", "Ваня"]);
+    dict.init('rusFemale',["Даша", "Маша", "Катя"]);
 
     if (!lang || !sex) {
     	throw 'Not valid params'
     }
     if (lang == 'eng') {
     	if (sex == 'male') {
-    		getRandomName(engMale);
+            return dict.getElement('engMale');
     	}
         else if (sex=='female') {
-      		getRandomName(engFemale);
+            return dict.getElement('engFemale');
         }
     }
  	else if (lang == 'rus') {
         if (sex == 'male') {
-        	getRandomName(rusMale);
+            return dict.getElement('rusMale');
         }
         else if (sex == 'female'){
-        	getRandomName(rusFemale);
+            return dict.getElement('rusFemale');
         }
     }
 }
