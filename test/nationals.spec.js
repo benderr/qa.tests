@@ -6,7 +6,7 @@ var supertest = require('supertest');
 //var PORT = process.env.PORT || '3000';
 var config = require('../nation.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var nameUtility = require('../nation.microservice/nameUtility');
+var nationUtility = require('../nation.microservice/nationUtility');
 
 
 describe('Проверка национальности', function () {

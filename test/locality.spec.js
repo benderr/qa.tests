@@ -3,15 +3,14 @@
 var expect = require('chai').expect;
 var supertest = require('supertest');
 
-var config = require('../martial.microservice/config');
+var config = require('../locality.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var martialUtility = require('../martial.microservice/martialUtility');
+var localityUtility = require('../locality.microservice/localityUtility');
 
 
 describe('Проверка семейного положения', function () {
-
     it('Семейное положение', function (done) {
-        expect(martialUtility.generate().length>0).to.equal(true);
+        expect(localityUtility.generate().length>0).to.equal(true);
         done();
     });
 });

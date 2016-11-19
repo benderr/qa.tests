@@ -6,7 +6,7 @@ var supertest = require('supertest');
 //var PORT = process.env.PORT || '3000';
 var config = require('../comments.microservice/config');
 var api = supertest('http://localhost:' + config.port);
-var nameUtility = require('../comments.microservice/nameUtility');
+var commentsUtility = require('../comments.microservice/commentsUtility');
 
 
 describe('Проверка комментария', function () {
