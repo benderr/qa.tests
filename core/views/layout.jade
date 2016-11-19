@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title QA.tests
+    body
+        header.main
+            .notice-wrapper
+                if messages && messages.length > 0
+                    .show.notice.error.notice-error
+                        for msg in messages
+                            span.notice-message= msg.msg
+
+        block content
+//
+   Created by Cartman on 19/11/16.
+
