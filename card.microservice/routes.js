@@ -2,9 +2,10 @@
 
 var express = require('express');
 var router = express.Router();
+var cardUtility = require('./cardUtility');
 
-router.get("/getdata", function (req, res, next) {
-        res.send('11');
+router.get("/getdata", function (req, res) {
+    res.send(cardUtility.generate());
 });
 
 module.exports = router;
