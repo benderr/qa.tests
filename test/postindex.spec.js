@@ -8,9 +8,9 @@ var api = supertest('http://localhost:' + config.port);
 var utility = require('../postindex.microservice/utility');
 var _it = require('./muttableIt')
 
-describe('Проверка улиц', function () {
+describe('Проверка индекса', function () {
 
-    _it('Улицы Москвы', function (done) {
+    _it('Индекс', function (done) {
     	var test = utility.generate();
         expect(test >= 150000 && test <= 700000).to.equal(true);
         done();

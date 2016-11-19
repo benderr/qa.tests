@@ -6,8 +6,8 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2016-11-19T21:18:52.733Z",
-    "end": "2016-11-19T21:18:52.745Z",
+    "start": "2016-11-19T22:35:13.097Z",
+    "end": "2016-11-19T22:35:13.109Z",
     "duration": 12,
     "testsRegistered": 1,
     "passPercent": 100,
@@ -23,12 +23,12 @@
     "title": "",
     "suites": [
       {
-        "title": "Проверка улиц",
+        "title": "Проверка пин кода",
         "suites": [],
         "tests": [
           {
-            "title": "Улицы Москвы | Результат работы: 216420",
-            "fullTitle": "Проверка улиц Улицы Москвы",
+            "title": "Пин код | Результат работы: 128",
+            "fullTitle": "Проверка пин кода Пин код",
             "timedOut": false,
             "duration": 1,
             "state": "passed",
@@ -36,23 +36,23 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(test &gt;= <span class=\"hljs-number\">150000</span> &amp;&amp; test &lt;= <span class=\"hljs-number\">700000</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(<span class=\"hljs-regexp\">/^[0-9]{3}$/</span>.test(test)).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "b3f205e8-fc9a-4058-ac62-5e68eb49c651",
-            "parentUUID": "0d241cea-512c-45b9-b021-9d581a6f48e2",
+            "uuid": "6717fc01-8ba0-4559-8217-280c90312399",
+            "parentUUID": "c29d8e1a-700e-41e6-a312-05029452ba90",
             "skipped": false
           }
         ],
         "pending": [],
         "root": false,
         "_timeout": 2500,
-        "file": "\\test\\postindex.spec.js",
-        "uuid": "0d241cea-512c-45b9-b021-9d581a6f48e2",
-        "fullFile": "D:\\hackaton\\qa.tests\\test\\postindex.spec.js",
+        "file": "\\test\\cvv.spec.js",
+        "uuid": "c29d8e1a-700e-41e6-a312-05029452ba90",
+        "fullFile": "D:\\hackaton\\qa.tests\\test\\cvv.spec.js",
         "passes": [
           {
-            "title": "Улицы Москвы | Результат работы: 216420",
-            "fullTitle": "Проверка улиц Улицы Москвы",
+            "title": "Пин код | Результат работы: 128",
+            "fullTitle": "Проверка пин кода Пин код",
             "timedOut": false,
             "duration": 1,
             "state": "passed",
@@ -60,10 +60,10 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(test &gt;= <span class=\"hljs-number\">150000</span> &amp;&amp; test &lt;= <span class=\"hljs-number\">700000</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+            "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(<span class=\"hljs-regexp\">/^[0-9]{3}$/</span>.test(test)).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
             "isRoot": false,
-            "uuid": "b3f205e8-fc9a-4058-ac62-5e68eb49c651",
-            "parentUUID": "0d241cea-512c-45b9-b021-9d581a6f48e2",
+            "uuid": "6717fc01-8ba0-4559-8217-280c90312399",
+            "parentUUID": "c29d8e1a-700e-41e6-a312-05029452ba90",
             "skipped": false
           }
         ],
@@ -87,7 +87,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2500,
-    "uuid": "d15a048d-ab16-4f83-b715-83d4acdba2f7",
+    "uuid": "034bd186-b27d-48f5-853b-61879b463639",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -109,8 +109,8 @@
   },
   "allTests": [
     {
-      "title": "Улицы Москвы | Результат работы: 216420",
-      "fullTitle": "Проверка улиц Улицы Москвы",
+      "title": "Пин код | Результат работы: 128",
+      "fullTitle": "Проверка пин кода Пин код",
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -118,18 +118,18 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(test &gt;= <span class=\"hljs-number\">150000</span> &amp;&amp; test &lt;= <span class=\"hljs-number\">700000</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(<span class=\"hljs-regexp\">/^[0-9]{3}$/</span>.test(test)).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "de910a22-33ea-4a3c-a6f0-4efd911494e3",
-      "parentUUID": "0d241cea-512c-45b9-b021-9d581a6f48e2",
+      "uuid": "3664ff0f-bf4c-4fc5-9c21-ab270c043559",
+      "parentUUID": "c29d8e1a-700e-41e6-a312-05029452ba90",
       "skipped": false
     }
   ],
   "allPending": [],
   "allPasses": [
     {
-      "title": "Улицы Москвы | Результат работы: 216420",
-      "fullTitle": "Проверка улиц Улицы Москвы",
+      "title": "Пин код | Результат работы: 128",
+      "fullTitle": "Проверка пин кода Пин код",
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -137,10 +137,10 @@
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(test &gt;= <span class=\"hljs-number\">150000</span> &amp;&amp; test &lt;= <span class=\"hljs-number\">700000</span>).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
+      "code": "<span class=\"hljs-keyword\">var</span> test = utility.generate();<br>    expect(<span class=\"hljs-regexp\">/^[0-9]{3}$/</span>.test(test)).to.equal(<span class=\"hljs-literal\">true</span>);<br>    done();<br>    <span class=\"hljs-keyword\">return</span> test;",
       "isRoot": false,
-      "uuid": "c37ec19f-e877-42ae-ab3c-9092a2681e12",
-      "parentUUID": "0d241cea-512c-45b9-b021-9d581a6f48e2",
+      "uuid": "df813288-1714-4768-8456-28b325bcda2e",
+      "parentUUID": "c29d8e1a-700e-41e6-a312-05029452ba90",
       "skipped": false
     }
   ],
