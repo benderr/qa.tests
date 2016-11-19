@@ -13,8 +13,7 @@ describe('Валидация снилс', function () {
     it('Валидация сервиса', function (done) {
         api.get('/getdata')
             .end(function (err, res) {
-                //валидация 11 симолов с учетом форматтера
-                expect(res.text).to.have.length(14);
+                expect(res.text).to.have.length(11);
                 expect(snilsUtility.validate(res.text)).to.equal(true);
                 done();
             });

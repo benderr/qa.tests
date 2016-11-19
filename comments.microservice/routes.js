@@ -2,10 +2,9 @@
 
 var express = require('express');
 var router = express.Router();
-var snilsUtility = require('./snilsUtility');
+var commentsUtility = require('./commentsUtility');
 
 router.get("/getdata", function (req, res) {
-    res.send(snilsUtility.generate(false));
+    res.send(commentsUtility.generate().toString());
 });
-
 module.exports = router;
