@@ -12,7 +12,11 @@ function init(dictName, data) {
   arrays[dictName]= data;
 }
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 module.exports={
   init: init,
-  getElement: getElement
+  getElement: getElement,
+  getRandomInt: getRandomInt
 };
