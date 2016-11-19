@@ -8,8 +8,8 @@ var api = supertest('http://localhost:' + config.port);
 var localityUtility = require('../locality.microservice/localityUtility');
 
 
-describe('Проверка семейного положения', function () {
-    it('Семейное положение', function (done) {
+describe('Проверка населённого пункт', function () {
+    it('Населённый пункт', function (done) {
         expect(localityUtility.generate().length>0).to.equal(true);
         done();
     });
