@@ -8,7 +8,11 @@
     "inn": "node ./inn.microservice/app.js",
     "snils": "node ./snils.microservice/app.js",
     "kpp": "node ./kpp.microservice/app.js",
+    "bik": "node ./bik.microservice/app.js",
+    "kbk": "node ./kbk.microservice/app.js",
     "bankcard": "node ./card.microservice/app.js",
+    "transport": "node ./transport.microservice/app.js",
+    "phone": "node ./phone.microservice/app.js",
     "test": "mocha"
   },
   "repository": {

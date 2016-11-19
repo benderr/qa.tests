@@ -1,5 +1,5 @@
 var config = {
-    port: 3310
+    port: 3011
 };
 
 module.exports = config;
