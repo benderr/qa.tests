@@ -19,7 +19,7 @@
     "customstring": "node ./customstring.microservice/app.js",
     "birthcert": "node ./birthcert.microservice/app.js",
     "test": "mocha --reporter mochawesome",
-    "testall": "mocha --reporter mochawesome --reporter-options reportDir=test/report,reportTitle="
+    "testall": "mocha --reporter mochawesome --reporter-options reportDir=test/report"
   },
   "repository": {
     "type": "git",
