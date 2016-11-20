@@ -26,6 +26,14 @@ describe('Валидация огрн', function () {
         return test;
     });
 
+    _it('Валидация сервиса случайного огрн (либо ип, либо юр)', function (done) {
+        var test = ogrnUtility.generate();
+        expect(test.length == 13 || test.length == 15).to.be.equal(true);
+        expect(ogrnUtility.validate(test)).to.equal(true);
+        done();
+        return test;
+    });
+
     _it('Валидация валидного ип', function (done) {
         expect(ogrnUtility.validate('309213035700032')).to.equal(true);
         done();

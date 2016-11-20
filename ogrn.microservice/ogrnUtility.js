@@ -1,6 +1,14 @@
 var random = require('../core/radomizer');
+var dict = require('../core/dictService');
 
 function ogrnGenerator(type) {
+    var arrParams = ['legal', 'ip'];
+    //если параметр не указан генерируем случайный огрн (либо ип, либо юр.)
+    if (!type || arrParams.indexOf(type) == -1) {
+        dict.init('ogrnparams', arrParams);
+        type = dict.getElement('ogrnparams');
+    }
+
     if (type == 'legal') {
         //длина 13 
         var ogrnLegal = random(12);
