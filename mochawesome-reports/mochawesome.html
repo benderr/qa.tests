@@ -15,12 +15,12 @@
       <div class="container">
         <div class="report-info-cnt">
           <h1 class="report-title">qa.tests</h1>
-          <h3 class="report-date">Sunday, November 20 2016, 05:19am</h3>
+          <h3 class="report-date">Sunday, November 20 2016, 06:01am</h3>
         </div>
         <div class="nav-right">
           <div class="quick-summary-cnt">
               <ul class="list-unstyled quick-summary">
-                <li class="qs-item summary-duration" title="Duration">22<span>MS</span></li>
+                <li class="qs-item summary-duration" title="Duration">23<span>MS</span></li>
                 <li class="qs-item summary-suites" title="Suites">1</li>
                 <li class="qs-item summary-tests" title="Tests">4</li>
                 <li class="qs-item summary-passes" title="Passed" data-filter="passed">4</li>
@@ -37,7 +37,7 @@
       <div class="container">
           <div class="row">
             <div class="summary-col summary-duration">
-              <h1 class="summary-count">22<span>MS</span></h1>
+              <h1 class="summary-count">23<span>MS</span></h1>
               <h4 class="summary-label">MS</h4>
             </div>
             <div class="summary-col summary-suites" title="Suites">
@@ -73,17 +73,17 @@
     <!-- Suites -->
     <div class="details container">
             <section class="suite-wrap">
-          <div id="7617289c-84f2-4ab8-a548-46541697c329" class="suite has-tests has-passed">
-            <h3 class="suite-title">Проверка ФИО</h3>
-            <h5 class="suite-filename">\test\fio.spec.js</h5>
+          <div id="c552a0b1-1f26-4763-a9fe-e31aae37cb9f" class="suite has-tests has-passed">
+            <h3 class="suite-title">Валидация инн</h3>
+            <h5 class="suite-filename">\test\inn.spec.js</h5>
             <!-- Suite Chart -->
             <div class="suite-chart-wrap">
-              <canvas id="7617289c-84f2-4ab8-a548-46541697c329" class="suite-chart" width="50" height="50" data-total-passes="4" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+              <canvas id="c552a0b1-1f26-4763-a9fe-e31aae37cb9f" class="suite-chart" width="50" height="50" data-total-passes="4" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
             </div>
             <div class="suite-data-wrap">
               <!-- Suite Summary -->
               <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">2 ms</li>
+                <li class="suite-summary-item duration">1 ms</li>
                 <li class="suite-summary-item tests">4</li>
                 <li class="suite-summary-item passed">4</li>
                 <li class="suite-summary-item failed">0</li>
@@ -91,80 +91,80 @@
               </ul>
               <!-- Test Info -->
               <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#7617289c-84f2-4ab8-a548-46541697c329-test-list">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#c552a0b1-1f26-4763-a9fe-e31aae37cb9f-test-list">
                   <h4 class="suite-test-header-title">Tests</h4>
                 </div>
-                <div id="7617289c-84f2-4ab8-a548-46541697c329-test-list" class="list-group test-list collapse in">
-                    <div id="c79ce4a1-67ba-4b4e-8488-1daab10fff54" class="list-group-item test passed">
+                <div id="c552a0b1-1f26-4763-a9fe-e31aae37cb9f-test-list" class="list-group test-list collapse in">
+                    <div id="ae1341b3-f22b-4dc1-83fb-3f15d06cc3c1" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
               <span class="text-muted hidden"> it </span>
-              ФИО eng male | Результат работы: Wilson Brian Dinarovich
+              для ИП | Результат работы: 208963008220
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c79ce4a1-67ba-4b4e-8488-1daab10fff54 > .test-code.collapse">Code</button>
-              <span class="test-duration fast">2 ms</span>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ae1341b3-f22b-4dc1-83fb-3f15d06cc3c1 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> val = surnameUtility.generate(<span class="hljs-string">'eng'</span>, <span class="hljs-string">'male'</span>);<br>expect(<span class="hljs-regexp">/^[A-Za-z]* [A-Za-z]* [A-Za-z]*$/</span>.test(val)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> val;</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> inn = innUtility.generate(<span class="hljs-string">'ip'</span>).toString();<br>expect(innUtility.validate(inn)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> inn;</code></pre>
           </div>
           <!-- Test Error Stack -->
-        </div>            <div id="808291db-cf23-4684-977c-3ff7bfecfbdf" class="list-group-item test passed">
+        </div>            <div id="de90702c-d933-42f7-87b8-373aff29694f" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
               <span class="text-muted hidden"> it </span>
-              ФИО rus male | Результат работы: Сидоров Роберт Александрович
+              для Юрлица | Результат работы: 0355063177
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#808291db-cf23-4684-977c-3ff7bfecfbdf > .test-code.collapse">Code</button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#de90702c-d933-42f7-87b8-373aff29694f > .test-code.collapse">Code</button>
               <span class="test-duration fast">0 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> val = surnameUtility.generate(<span class="hljs-string">'rus'</span>, <span class="hljs-string">'male'</span>);<br>expect(<span class="hljs-regexp">/^[А-Яа-я]* [А-Яа-я]* [А-Яа-я]*$/</span>.test(val)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> val;</code></pre>
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> inn = innUtility.generate(<span class="hljs-string">'legal'</span>);<br>expect(innUtility.validate(inn)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> inn;</code></pre>
           </div>
           <!-- Test Error Stack -->
-        </div>            <div id="53fd1fcc-2220-4baa-84d2-fc885d0bae0d" class="list-group-item test passed">
+        </div>            <div id="b9a1e5c6-0828-4b64-b684-6854b6fb3a9d" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
               <span class="text-muted hidden"> it </span>
-              ФИО eng female | Результат работы: Smith Joan Robertovna
+              для резидента | Результат работы: значение инн 12345
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#53fd1fcc-2220-4baa-84d2-fc885d0bae0d > .test-code.collapse">Code</button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b9a1e5c6-0828-4b64-b684-6854b6fb3a9d > .test-code.collapse">Code</button>
               <span class="test-duration fast">0 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> val = surnameUtility.generate(<span class="hljs-string">'eng'</span>, <span class="hljs-string">'female'</span>);<br>expect(<span class="hljs-regexp">/^[A-Za-z]* [A-Za-z]* [A-Za-z]*$/</span>.test(val)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> val;</code></pre>
+            <pre><code class="hljs javascript small">expect(innUtility.validate(<span class="hljs-string">'12345'</span>)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> <span class="hljs-string">'значение инн 12345'</span>;</code></pre>
           </div>
           <!-- Test Error Stack -->
-        </div>            <div id="e0a459ee-07ba-4f66-b7a8-e4129e6efb1d" class="list-group-item test passed">
+        </div>            <div id="c1924810-0ffc-4096-b0dc-906364b5dde3" class="list-group-item test passed">
           <!-- Test Heading -->
           <div class="test-heading">
             <h4 class="test-title">
               <span class="text-muted hidden"> it </span>
-              ФИО rus female | Результат работы: Петрова Александра Денисовна
+              Валидация пустого
             </h4>
             <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#e0a459ee-07ba-4f66-b7a8-e4129e6efb1d > .test-code.collapse">Code</button>
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c1924810-0ffc-4096-b0dc-906364b5dde3 > .test-code.collapse">Code</button>
               <span class="test-duration fast">0 ms</span>
             </div>
           </div>
           <!-- Test Errors -->
           <!-- Test Code -->
           <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> val = surnameUtility.generate(<span class="hljs-string">'rus'</span>, <span class="hljs-string">'female'</span>);<br>expect(<span class="hljs-regexp">/^[А-Яа-я]* [А-Яа-я]* [А-Яа-я]*$/</span>.test(val)).to.equal(<span class="hljs-literal">true</span>);<br>done();<br><span class="hljs-keyword">return</span> val;</code></pre>
+            <pre><code class="hljs javascript small">expect(innUtility.validate(<span class="hljs-string">''</span>)).to.equal(<span class="hljs-literal">false</span>);<br>done();</code></pre>
           </div>
           <!-- Test Error Stack -->
         </div>        </div>
@@ -189,7 +189,7 @@
         <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
         <ul class="list-unstyled main-menu">
                 <li class="nav-menu-item">
-                <a href="#7617289c-84f2-4ab8-a548-46541697c329" class="nav-menu-item-link has-passes">Проверка ФИО</a>
+                <a href="#c552a0b1-1f26-4763-a9fe-e31aae37cb9f" class="nav-menu-item-link has-passes">Валидация инн</a>
             </li>
         </ul>
       </nav>
