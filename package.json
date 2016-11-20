@@ -12,6 +12,8 @@
     "kbk": "node ./kbk.microservice/app.js",
     "bankcard": "node ./card.microservice/app.js",
     "transport": "node ./transport.microservice/app.js",
+    "passport": "node ./passport.microservice/app.js",
+    "passportinter": "node ./passportinter.microservice/app.js",
     "phone": "node ./phone.microservice/app.js",
     "customoptions": "node ./customoptions.microservice/app.js",
     "birthcert": "node ./birthcert.microservice/app.js",
