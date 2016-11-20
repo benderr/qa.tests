@@ -7,6 +7,8 @@
 Забрать проект 
 ```git
 git clone git@github.com:benderr/qa.tests.git
+или
+git clone https://github.com/benderr/qa.tests.git
 ```
 Установка зависимостей 
 ```js
