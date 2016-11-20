@@ -1,15 +1,22 @@
 {
-  "reportTitle": "qa.tests",
+  "reportTitle": "QA.tests",
   "stats": {
     "suites": 1,
-    "tests": 4,
-    "passes": 4,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2016-11-20T01:01:20.851Z",
     "end": "2016-11-20T01:01:20.874Z",
     "duration": 23,
     "testsRegistered": 4,
+=======
+    "start": "2016-11-20T01:53:34.638Z",
+    "end": "2016-11-20T01:53:34.659Z",
+    "duration": 21,
+    "testsRegistered": 3,
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -23,12 +30,21 @@
     "title": "",
     "suites": [
       {
+<<<<<<< HEAD
         "title": "Валидация инн",
         "suites": [],
         "tests": [
           {
             "title": "для ИП | Результат работы: 208963008220",
             "fullTitle": "Валидация инн для ИП",
+=======
+        "title": "Валидация снилс",
+        "suites": [],
+        "tests": [
+          {
+            "title": "Генерация снилс | Результат работы: 22935140358",
+            "fullTitle": "Валидация снилс Генерация снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "timedOut": false,
             "duration": 1,
             "state": "passed",
@@ -36,6 +52,7 @@
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "<span class=\"hljs-keyword\">var</span> inn = innUtility.generate(<span class=\"hljs-string\">'ip'</span>).toString();<br>expect(innUtility.validate(inn)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> inn;",
             "isRoot": false,
             "uuid": "ae1341b3-f22b-4dc1-83fb-3f15d06cc3c1",
@@ -63,11 +80,25 @@
             "fullTitle": "Валидация инн для резидента",
             "timedOut": false,
             "duration": 0,
+=======
+            "code": "<span class=\"hljs-keyword\">var</span> val = snilsUtility.generate(<span class=\"hljs-literal\">false</span>)<br>expect(snilsUtility.validate(val)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> val;",
+            "isRoot": false,
+            "uuid": "be7f1d79-1d16-463b-a1ad-1f66badf6020",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+            "skipped": false
+          },
+          {
+            "title": "Проверка контрольной суммы для верного снилс | Результат работы: 11223344595",
+            "fullTitle": "Валидация снилс Проверка контрольной суммы для верного снилс",
+            "timedOut": false,
+            "duration": 1,
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "expect(innUtility.validate(<span class=\"hljs-string\">'12345'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'значение инн 12345'</span>;",
             "isRoot": false,
             "uuid": "b9a1e5c6-0828-4b64-b684-6854b6fb3a9d",
@@ -77,6 +108,17 @@
           {
             "title": "Валидация пустого",
             "fullTitle": "Валидация инн Валидация пустого",
+=======
+            "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344595'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344595'</span>;",
+            "isRoot": false,
+            "uuid": "2011d718-3277-4d92-a5cb-dcc1fb44b5af",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+            "skipped": false
+          },
+          {
+            "title": "Проверка контрольной суммы для неверного снилс | Результат работы: 11223344591",
+            "fullTitle": "Валидация снилс Проверка контрольной суммы для неверного снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "timedOut": false,
             "duration": 0,
             "state": "passed",
@@ -84,16 +126,24 @@
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "expect(innUtility.validate(<span class=\"hljs-string\">''</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();",
             "isRoot": false,
             "uuid": "c1924810-0ffc-4096-b0dc-906364b5dde3",
             "parentUUID": "c552a0b1-1f26-4763-a9fe-e31aae37cb9f",
+=======
+            "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344591'</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344591'</span>;",
+            "isRoot": false,
+            "uuid": "58bbeeb8-01b4-47e0-a7ab-90ffd48a6ca0",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "skipped": false
           }
         ],
         "pending": [],
         "root": false,
         "_timeout": 2500,
+<<<<<<< HEAD
         "file": "\\test\\inn.spec.js",
         "uuid": "c552a0b1-1f26-4763-a9fe-e31aae37cb9f",
         "fullFile": "D:\\hackaton\\qa.tests\\test\\inn.spec.js",
@@ -101,6 +151,15 @@
           {
             "title": "для ИП | Результат работы: 208963008220",
             "fullTitle": "Валидация инн для ИП",
+=======
+        "file": "/test/snils.spec.js",
+        "uuid": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+        "fullFile": "/Users/Cartman/Work/Projects/QA.tests/test/snils.spec.js",
+        "passes": [
+          {
+            "title": "Генерация снилс | Результат работы: 22935140358",
+            "fullTitle": "Валидация снилс Генерация снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "timedOut": false,
             "duration": 1,
             "state": "passed",
@@ -108,6 +167,7 @@
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "<span class=\"hljs-keyword\">var</span> inn = innUtility.generate(<span class=\"hljs-string\">'ip'</span>).toString();<br>expect(innUtility.validate(inn)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> inn;",
             "isRoot": false,
             "uuid": "ae1341b3-f22b-4dc1-83fb-3f15d06cc3c1",
@@ -135,11 +195,25 @@
             "fullTitle": "Валидация инн для резидента",
             "timedOut": false,
             "duration": 0,
+=======
+            "code": "<span class=\"hljs-keyword\">var</span> val = snilsUtility.generate(<span class=\"hljs-literal\">false</span>)<br>expect(snilsUtility.validate(val)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> val;",
+            "isRoot": false,
+            "uuid": "be7f1d79-1d16-463b-a1ad-1f66badf6020",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+            "skipped": false
+          },
+          {
+            "title": "Проверка контрольной суммы для верного снилс | Результат работы: 11223344595",
+            "fullTitle": "Валидация снилс Проверка контрольной суммы для верного снилс",
+            "timedOut": false,
+            "duration": 1,
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "expect(innUtility.validate(<span class=\"hljs-string\">'12345'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'значение инн 12345'</span>;",
             "isRoot": false,
             "uuid": "b9a1e5c6-0828-4b64-b684-6854b6fb3a9d",
@@ -149,6 +223,17 @@
           {
             "title": "Валидация пустого",
             "fullTitle": "Валидация инн Валидация пустого",
+=======
+            "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344595'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344595'</span>;",
+            "isRoot": false,
+            "uuid": "2011d718-3277-4d92-a5cb-dcc1fb44b5af",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+            "skipped": false
+          },
+          {
+            "title": "Проверка контрольной суммы для неверного снилс | Результат работы: 11223344591",
+            "fullTitle": "Валидация снилс Проверка контрольной суммы для неверного снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "timedOut": false,
             "duration": 0,
             "state": "passed",
@@ -156,10 +241,17 @@
             "pass": true,
             "fail": false,
             "pending": false,
+<<<<<<< HEAD
             "code": "expect(innUtility.validate(<span class=\"hljs-string\">''</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();",
             "isRoot": false,
             "uuid": "c1924810-0ffc-4096-b0dc-906364b5dde3",
             "parentUUID": "c552a0b1-1f26-4763-a9fe-e31aae37cb9f",
+=======
+            "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344591'</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344591'</span>;",
+            "isRoot": false,
+            "uuid": "58bbeeb8-01b4-47e0-a7ab-90ffd48a6ca0",
+            "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
             "skipped": false
           }
         ],
@@ -167,8 +259,8 @@
         "skipped": [],
         "hasTests": true,
         "hasSuites": false,
-        "totalTests": 4,
-        "totalPasses": 4,
+        "totalTests": 3,
+        "totalPasses": 3,
         "totalFailures": 0,
         "totalPending": 0,
         "totalSkipped": 0,
@@ -183,7 +275,11 @@
     "pending": [],
     "root": true,
     "_timeout": 2500,
+<<<<<<< HEAD
     "uuid": "463289cd-fb16-4868-841f-496821927029",
+=======
+    "uuid": "dd5c1c9c-e8fb-4a2b-ad6b-afa66192d2d0",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -205,8 +301,13 @@
   },
   "allTests": [
     {
+<<<<<<< HEAD
       "title": "для ИП | Результат работы: 208963008220",
       "fullTitle": "Валидация инн для ИП",
+=======
+      "title": "Генерация снилс | Результат работы: 22935140358",
+      "fullTitle": "Валидация снилс Генерация снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -214,6 +315,7 @@
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "<span class=\"hljs-keyword\">var</span> inn = innUtility.generate(<span class=\"hljs-string\">'ip'</span>).toString();<br>expect(innUtility.validate(inn)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> inn;",
       "isRoot": false,
       "uuid": "85352664-3696-439f-a6a0-c4d154531aa1",
@@ -241,11 +343,25 @@
       "fullTitle": "Валидация инн для резидента",
       "timedOut": false,
       "duration": 0,
+=======
+      "code": "<span class=\"hljs-keyword\">var</span> val = snilsUtility.generate(<span class=\"hljs-literal\">false</span>)<br>expect(snilsUtility.validate(val)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> val;",
+      "isRoot": false,
+      "uuid": "7e8c48fb-efae-4393-b4c6-ee565c2c6052",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+      "skipped": false
+    },
+    {
+      "title": "Проверка контрольной суммы для верного снилс | Результат работы: 11223344595",
+      "fullTitle": "Валидация снилс Проверка контрольной суммы для верного снилс",
+      "timedOut": false,
+      "duration": 1,
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "expect(innUtility.validate(<span class=\"hljs-string\">'12345'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'значение инн 12345'</span>;",
       "isRoot": false,
       "uuid": "a2b6e948-b29f-4786-b6fe-a55aa89ede66",
@@ -255,6 +371,17 @@
     {
       "title": "Валидация пустого",
       "fullTitle": "Валидация инн Валидация пустого",
+=======
+      "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344595'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344595'</span>;",
+      "isRoot": false,
+      "uuid": "67799ab9-dba4-4249-8b8b-99e66694795a",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+      "skipped": false
+    },
+    {
+      "title": "Проверка контрольной суммы для неверного снилс | Результат работы: 11223344591",
+      "fullTitle": "Валидация снилс Проверка контрольной суммы для неверного снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "timedOut": false,
       "duration": 0,
       "state": "passed",
@@ -262,18 +389,30 @@
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "expect(innUtility.validate(<span class=\"hljs-string\">''</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();",
       "isRoot": false,
       "uuid": "d83718f4-128a-494e-b85b-d352ee65adf9",
       "parentUUID": "c552a0b1-1f26-4763-a9fe-e31aae37cb9f",
+=======
+      "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344591'</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344591'</span>;",
+      "isRoot": false,
+      "uuid": "df5db369-50d2-4b5d-8a7e-99f55d618a02",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "skipped": false
     }
   ],
   "allPending": [],
   "allPasses": [
     {
+<<<<<<< HEAD
       "title": "для ИП | Результат работы: 208963008220",
       "fullTitle": "Валидация инн для ИП",
+=======
+      "title": "Генерация снилс | Результат работы: 22935140358",
+      "fullTitle": "Валидация снилс Генерация снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "timedOut": false,
       "duration": 1,
       "state": "passed",
@@ -281,6 +420,7 @@
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "<span class=\"hljs-keyword\">var</span> inn = innUtility.generate(<span class=\"hljs-string\">'ip'</span>).toString();<br>expect(innUtility.validate(inn)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> inn;",
       "isRoot": false,
       "uuid": "5d61fda2-0b42-4228-9740-ced56cc10ed8",
@@ -308,11 +448,25 @@
       "fullTitle": "Валидация инн для резидента",
       "timedOut": false,
       "duration": 0,
+=======
+      "code": "<span class=\"hljs-keyword\">var</span> val = snilsUtility.generate(<span class=\"hljs-literal\">false</span>)<br>expect(snilsUtility.validate(val)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> val;",
+      "isRoot": false,
+      "uuid": "c2880325-df2c-4559-99c5-fd04ef9bcff1",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+      "skipped": false
+    },
+    {
+      "title": "Проверка контрольной суммы для верного снилс | Результат работы: 11223344595",
+      "fullTitle": "Валидация снилс Проверка контрольной суммы для верного снилс",
+      "timedOut": false,
+      "duration": 1,
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "expect(innUtility.validate(<span class=\"hljs-string\">'12345'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'значение инн 12345'</span>;",
       "isRoot": false,
       "uuid": "470ccf1f-d65e-4d3f-8bc7-73aba57600e5",
@@ -322,6 +476,17 @@
     {
       "title": "Валидация пустого",
       "fullTitle": "Валидация инн Валидация пустого",
+=======
+      "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344595'</span>)).to.equal(<span class=\"hljs-literal\">true</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344595'</span>;",
+      "isRoot": false,
+      "uuid": "3148dd8e-2a9e-4811-8af9-9fc42176a34e",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+      "skipped": false
+    },
+    {
+      "title": "Проверка контрольной суммы для неверного снилс | Результат работы: 11223344591",
+      "fullTitle": "Валидация снилс Проверка контрольной суммы для неверного снилс",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "timedOut": false,
       "duration": 0,
       "state": "passed",
@@ -329,10 +494,17 @@
       "pass": true,
       "fail": false,
       "pending": false,
+<<<<<<< HEAD
       "code": "expect(innUtility.validate(<span class=\"hljs-string\">''</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();",
       "isRoot": false,
       "uuid": "fdc58527-4a36-4f43-82af-1c7807d4e151",
       "parentUUID": "c552a0b1-1f26-4763-a9fe-e31aae37cb9f",
+=======
+      "code": "expect(snilsUtility.validate(<span class=\"hljs-string\">'11223344591'</span>)).to.equal(<span class=\"hljs-literal\">false</span>);<br>done();<br><span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'11223344591'</span>;",
+      "isRoot": false,
+      "uuid": "5e1d3f2a-5c80-4cf8-9eef-12504966f568",
+      "parentUUID": "679cf3a9-ccce-4a5a-b0eb-9d371cbdf1ce",
+>>>>>>> 148b594f55ca46f893e43d12713865685f90da21
       "skipped": false
     }
   ],

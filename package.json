@@ -16,6 +16,7 @@
     "passportinter": "node ./passportinter.microservice/app.js",
     "phone": "node ./phone.microservice/app.js",
     "customoptions": "node ./customoptions.microservice/app.js",
+    "customstring": "node ./customstring.microservice/app.js",
     "birthcert": "node ./birthcert.microservice/app.js",
     "test": "mocha --reporter mochawesome",
     "testall": "mocha --reporter mochawesome --reporter-options reportDir=test/report"
